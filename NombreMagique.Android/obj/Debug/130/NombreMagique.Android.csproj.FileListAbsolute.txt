@@ -631,3 +631,5 @@ C:\Users\Formation\source\repos\NombreMagique\NombreMagique.Android\obj\Debug\13
 C:\Users\Formation\source\repos\NombreMagique\NombreMagique.Android\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 C:\Users\Formation\source\repos\NombreMagique\NombreMagique.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Formation\source\repos\NombreMagique\NombreMagique.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Formation\source\repos\NombreMagique\NombreMagique.Android\obj\Debug\130\res\drawable\star.png
+C:\Users\Formation\source\repos\NombreMagique\NombreMagique.Android\obj\Debug\130\res\drawable\win.png
