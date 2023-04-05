@@ -19,6 +19,7 @@ namespace NombreMagique.Views
         public GamePage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
 
             this.pickNumber();
             hint.Text = $"Entre {NB_MIN} et {NB_MAX}";
@@ -58,10 +59,7 @@ namespace NombreMagique.Views
 
                 if (numberGuessed == magicNumber)
                 {
-                    DisplayAlert("Nombre magique", "C'est gagné", "OK");
-                    this.pickNumber();
-                    number.Text = null;
-                    number.Focus();
+                    this.winAction();
                     return;
                 }
             }
@@ -72,6 +70,12 @@ namespace NombreMagique.Views
                 number.Focus();
                 return;
             }
+        }
+
+        private async Task winAction()
+        {
+            await DisplayAlert("Nombre magique", "C'est gagné", "OK");
+            await this.Navigation.PopAsync();
         }
     }
 }

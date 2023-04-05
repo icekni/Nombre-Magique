@@ -11,7 +11,7 @@ namespace NombreMagique
         {
             InitializeComponent();
 
-            MainPage = new GamePage();
+            MainPage = new NavigationPage(new WelcomePage());
         }
 
         protected override void OnStart()
