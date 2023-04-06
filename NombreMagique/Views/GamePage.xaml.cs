@@ -65,7 +65,7 @@ namespace NombreMagique.Views
 
                 if (numberGuessed == magicNumber)
                 {
-                    this.winAction();
+                    Navigation.PushAsync(new WinPage(magicNumber));
                     return;
                 }
             }
