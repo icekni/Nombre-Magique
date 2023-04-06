@@ -1,34 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:NombreMagique.Views"
              x:Class="NombreMagique.Views.GamePage">
     <ContentPage.Content>
-        <StackLayout Padding="30, 75">
-            <Label Text="Devinez le nombre magique"
-                FontSize="32" 
-                HorizontalTextAlignment="Center"
-                TextColor="{StaticResource titleColor}" />
-            <Label x:Name="hint" 
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <views:StarsView Grid.Row="0" />
+
+            <StackLayout Padding="30, 0" Grid.Row="1" VerticalOptions="Center">
+                <Label Text="Devinez le nombre magique"
+                   FontSize="32" 
+                   HorizontalTextAlignment="Center"
+                   TextColor="{StaticResource titleColor}" />
+                <Label x:Name="hint" 
                    HorizontalTextAlignment="Center" 
                    FontAttributes="Italic" 
                    TextColor="{StaticResource titleColor}" />
-            <Entry x:Name="number" 
+                <Entry x:Name="number" 
                    Placeholder="?" 
                    PlaceholderColor="White" 
                    Keyboard="Numeric" 
                    BackgroundColor="{StaticResource shadowColor}" 
                    FontSize="72" 
-                   Margin="0, 50, 0, 5" 
+                   Margin="0, 30, 0, 5" 
                    HorizontalTextAlignment="Center" 
                    HorizontalOptions="CenterAndExpand" 
                    WidthRequest="130" />
-            <Button Text="Deviner" 
+                <Button Text="Deviner" 
                     TextColor="White" 
                     HorizontalOptions="CenterAndExpand" 
                     BackgroundColor="{StaticResource shadowColor}" 
                     WidthRequest="130" 
                     CornerRadius="5" 
                     Clicked="ButtonGuess_Clicked" />
-        </StackLayout>
+            </StackLayout>
+
+            <views:FooterView Grid.Row="2" />
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

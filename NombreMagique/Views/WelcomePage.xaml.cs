@@ -17,20 +17,7 @@ namespace NombreMagique.Views
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
 
-            this.starLoop(star1, 4000);
-            this.starLoop(star2, 7000);
-            this.starLoop(star3, 9000);
-
             this.bouncingButton();
-        }
-
-        private async Task starLoop(View view, uint duration)
-        {
-            while (true)
-            {
-                await view.RotateTo(360, duration);
-                view.Rotation = 0;
-            }
         }
 
         private async Task bouncingButton()

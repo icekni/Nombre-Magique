@@ -15,3 +15,6 @@ C:\Users\Formation\source\repos\NombreMagique\NombreMagique\obj\Debug\netstandar
 C:\Users\Formation\source\repos\NombreMagique\NombreMagique\obj\Debug\netstandard2.0\NombreMagique.pdb
 C:\Users\Formation\source\repos\NombreMagique\NombreMagique\obj\Debug\netstandard2.0\ref\NombreMagique.dll
 C:\Users\Formation\source\repos\NombreMagique\NombreMagique\obj\Debug\netstandard2.0\Views\WelcomePage.xaml.g.cs
+C:\Users\Formation\source\repos\NombreMagique\NombreMagique\obj\Debug\netstandard2.0\Views\StarsView.xaml.g.cs
+C:\Users\Formation\source\repos\NombreMagique\NombreMagique\obj\Debug\netstandard2.0\Views\FooterView.xaml.g.cs
+C:\Users\Formation\source\repos\NombreMagique\NombreMagique\obj\Debug\netstandard2.0\Views\WinPage.xaml.g.cs
