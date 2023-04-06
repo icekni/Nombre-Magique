@@ -1,27 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:NombreMagique.Views"
              x:Class="NombreMagique.Views.WelcomePage">
     <ContentPage.Content>
-        <StackLayout Spacing="0" Padding="0, 30, 0, 0">
-            <AbsoluteLayout Rotation="-10">
-                <BoxView Color="{StaticResource shadowColor}"
-                         AbsoluteLayout.LayoutFlags="WidthProportional"
-                         AbsoluteLayout.LayoutBounds="-10, 8, 0.52, 42" />
-                <Image x:Name="star1" Source="star.png" HeightRequest="60" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5, 0" />
-            </AbsoluteLayout>
-            <AbsoluteLayout Rotation="-10" Margin="0, -18">
-                <BoxView Color="{StaticResource shadowColor}"
-                         AbsoluteLayout.LayoutFlags="WidthProportional"
-                         AbsoluteLayout.LayoutBounds="-10, 8, 0.65, 42" />
-                <Image x:Name="star2" Source="star.png" HeightRequest="60" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.65, 0" />
-            </AbsoluteLayout>
-            <AbsoluteLayout Rotation="-10" Margin="0, -18">
-                <BoxView Color="{StaticResource shadowColor}"
-                         AbsoluteLayout.LayoutFlags="WidthProportional"
-                         AbsoluteLayout.LayoutBounds="-10, 8, 0.46, 42" />
-                <Image x:Name="star3" Source="star.png" HeightRequest="60" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.45, 0" />
-            </AbsoluteLayout>
+        <StackLayout Spacing="0">
+            <views:StarsView />
 
             <Frame BackgroundColor="Transparent" HasShadow="False" VerticalOptions="FillAndExpand">
                 <StackLayout VerticalOptions="Center" Spacing="25">
@@ -41,10 +25,7 @@
                 </StackLayout>
             </Frame>
 
-            <BoxView Color="{StaticResource shadowColor}" 
-                     Rotation="-10"
-                     HeightRequest="150"
-                     Margin="-20, 0, -20, -35" />
+            <views:FooterView />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

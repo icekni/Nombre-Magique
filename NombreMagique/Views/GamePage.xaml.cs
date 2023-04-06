@@ -25,6 +25,12 @@ namespace NombreMagique.Views
             hint.Text = $"Entre {NB_MIN} et {NB_MAX}";
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            hint.Text = $"Entre {NB_MIN} et {NB_MAX}";
+        }
+
         public void pickNumber()
         {
             this.magicNumber = new Random().Next(NB_MIN, NB_MAX);
